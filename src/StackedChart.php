@@ -2,11 +2,13 @@
 
 namespace Coroowicaksono\ChartJsIntegration;
 
+use Coroowicaksono\ChartJsIntegration\Traits\ComponentTrait;
 use Laravel\Nova\Card;
 use Illuminate\Support\Str;
 
 class StackedChart extends Card
 {
+    use ComponentTrait;
     /**
      * The width of the card (1/3, 1/2, or full).
      *
