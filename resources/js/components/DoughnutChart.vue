@@ -212,7 +212,7 @@
 
           // Use Model
           this.loading = true;
-          Nova.request().get("/nova-vendor/coroowicaksono/check-data/circle-endpoint", {
+          Nova.request().get( this.card.options.dataUri ?? "/nova-vendor/coroowicaksono/check-data/endpoint", {
             params: {
               model: this.card.model,
               series: this.card.series,
