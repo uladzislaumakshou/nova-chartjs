@@ -36,6 +36,7 @@ export default {
     },
     clear() {
       this.date = [];
+      this.$emit('onClose',{});
     },
     format(val) {
       const result = val.map(item => this.formatDate(item))
