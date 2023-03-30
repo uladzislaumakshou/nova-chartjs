@@ -8,6 +8,8 @@ import DoughnutChart from './components/DoughnutChart'
 import PieChart from './components/PieChart'
 import PolarAreaChart from './components/PolarAreaChart'
 import ScatterChart from './components/ScatterChart'
+import flatPickr from 'vue-flatpickr-component';
+import 'flatpickr/dist/flatpickr.css';
 
 Nova.booting((Vue) => {
     const textColor = getComputedStyle(document.documentElement)
@@ -24,5 +26,6 @@ Nova.booting((Vue) => {
     Vue.component('pie-chart', PieChart);
     Vue.component('polar-area-chart', PolarAreaChart);
     Vue.component('scatter-chart', ScatterChart);
+    Vue.component('flat-pickr', flatPickr);
 })
 

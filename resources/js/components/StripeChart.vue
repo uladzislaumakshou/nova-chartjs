@@ -12,6 +12,9 @@
         <default-button size="xs" class="mr-2" component="a" :href="externalLink" :target="externalLinkIn" v-show="btnExtLink">
           <icon-external-link />
         </default-button>
+
+        <date-range @on-close="handleFilterChanged" v-show="showAdvanceFilter"></date-range>
+
         <select-control size="xxs" @change="handleFilterChanged" :selected="advanceFilterSelected" v-show="showAdvanceFilter">
           <option v-for="filter in advanceFilter" v-bind:value="filter.value" :key="filter.key">
             {{ filter.text }}
@@ -27,9 +30,11 @@
   import LineChart from '../stripe-chart.vue';
   import IconRefresh from './Icons/IconRefresh';
   import IconExternalLink from './Icons/IconExternalLink';
+  import DateRange from "./DateRange.vue";
 
   export default {
     components: {
+      DateRange,
       IconExternalLink,
       IconRefresh,
       LineChart
@@ -106,6 +111,7 @@
       },
 
       handleFilterChanged(value) {
+        console.log(value)
         this.advanceFilterSelected = value;
         this.fillData();
       },

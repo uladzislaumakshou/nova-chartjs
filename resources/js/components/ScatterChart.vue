@@ -9,6 +9,7 @@
         <default-button size="xs" class="mr-2" @click="reloadPage()" v-show="buttonReload">
           <icon-refresh />
         </default-button>
+        <date-range @on-close="handleFilterChanged" v-show="showAdvanceFilter"></date-range>
         <default-button size="xs" class="mr-2" component="a" :href="externalLink" :target="externalLinkIn" v-show="btnExtLink">
           <icon-external-link />
         </default-button>
@@ -22,12 +23,14 @@
   import LineChart from '../scatter-chart.vue';
   import IconRefresh from './Icons/IconRefresh';
   import IconExternalLink from './Icons/IconExternalLink';
+  import DateRange from "./DateRange.vue";
 
   export default {
     components: {
       IconExternalLink,
       IconRefresh,
-      LineChart
+      LineChart,
+      DateRange,
     },
     data () {
       this.card.options = this.card.options != undefined ? this.card.options : false;
