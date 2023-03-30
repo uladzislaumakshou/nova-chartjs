@@ -1,6 +1,6 @@
 <?php
 
-namespace Coroowicaksono\ChartJsIntegration\Traits;
+namespace NovaChartJs\ChartJsIntegration\Traits;
 
 trait ComponentTrait
 {

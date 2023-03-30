@@ -1,6 +1,6 @@
 <?php
 
-namespace Coroowicaksono\ChartJsIntegration;
+namespace NovaChartJs\ChartJsIntegration;
 
 use Laravel\Nova\Card;
 

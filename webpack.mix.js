@@ -10,6 +10,6 @@ mix
             chartjs: 'Chart',
         },
         output: {
-            uniqueName: 'coroowicaksono/chart-js-integration',
+            uniqueName: 'novachartjs/chart-js-integration',
         },
     })

@@ -1,8 +1,8 @@
 <?php
 
-namespace Coroowicaksono\ChartJsIntegration;
+namespace NovaChartJs\ChartJsIntegration;
 
-use Coroowicaksono\ChartJsIntegration\Traits\ComponentTrait;
+use NovaChartJs\ChartJsIntegration\Traits\ComponentTrait;
 use Laravel\Nova\Card;
 
 class LineChart extends Card

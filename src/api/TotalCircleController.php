@@ -1,6 +1,6 @@
 <?php
 
-namespace Coroowicaksono\ChartJsIntegration\Api;
+namespace NovaChartJs\ChartJsIntegration\Api;
 
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Coroowicaksono\ChartJsIntegration\Api;
+namespace NovaChartJs\ChartJsIntegration\Api;
 
 use Carbon\CarbonImmutable;
 use Illuminate\Foundation\Validation\ValidatesRequests;
