@@ -15,7 +15,7 @@ export default {
   components: {Pie},
   props: {
     height: {
-      default: 110,
+      default: 250,
       type: Number
     }
   },

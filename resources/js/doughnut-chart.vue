@@ -14,7 +14,7 @@ export default {
   components: {Doughnut},
   props: {
     height: {
-      default: 110,
+      default: 250,
       type: Number
     }
   },

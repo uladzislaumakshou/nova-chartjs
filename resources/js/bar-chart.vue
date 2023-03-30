@@ -15,7 +15,7 @@ export default {
   components: {Bar},
   props: {
     height: {
-      default: 120,
+      default: 250,
       type: Number
     }
   },

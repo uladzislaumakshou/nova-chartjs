@@ -14,7 +14,7 @@
     components: {Line},
     props: {
       height: {
-        default: 120,
+        default: 250,
         type: Number
       }
     },
