@@ -3,6 +3,13 @@
     <div class="h-10 flex items-center p-6 mt-4">
       <h4 class="mr-3 leading-tight text-sm font-bold">{{ checkTitle }}</h4>
       <div class="flex relative ml-auto flex-shrink-0">
+
+        <select size="xxs">
+          <option value="1">
+            123
+          </option>
+        </select>
+
         <default-button size="xs" class="mr-2" @click="fillData()" v-show="buttonRefresh">
           <icon-refresh />
         </default-button>
